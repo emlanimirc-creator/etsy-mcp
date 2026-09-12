@@ -3,10 +3,7 @@ import httpx
 from fastmcp import FastMCP
 
 # Initialize FastMCP Server
-mcp = FastMCP(
-    "Etsy Store Manager",
-    description="Manage Etsy shop listings, check API connection, and retrieve store details.",
-)
+mcp = FastMCP("Etsy Store Manager")
 
 ETSY_API_BASE = "https://openapi.etsy.com"
 ETSY_KEYSTRING = os.getenv("ETSY_KEYSTRING", "jymzktxl4g6unybpjp3944e3")
